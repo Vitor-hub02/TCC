@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicial-Collect Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html.html">Sobre</a></li>
+                    <li><a href="servicos.html.html">Serviços</a></li>
+                    <li><a href="agendamentos.html.html">Agendamento de serviços</a></li>
+                    <li><a href="./loginTcc/index.html">Login/Cadastro</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>A maior cooperativa de coleta!!</h1>
+            <p>A Collect Master é uma cooperativa que atua em diversas regiões com um sistema de agendamentos para a coleta seletiva, venda de objetos com uma ótima qualidade e tambem coletamos objetos inservíveis e descartamos em um local adequado.</p>
+            <a href="sobre.html.html" class="coleta-btn">Visite nós para conhecer mais</a>
+        </div>
+    </section>
+
+    <section class="servicos">
+        <h1>Serviços que oferecemos</h1>
+
+        <div class="row">
+            <div class="servicos-col">
+                <h3>Coleta seletiva</h3>
+                <p>O serviço de coleta seletiva é realizada por duas empresas de nossa responsabilidade que faz a busca na residência do cliente e depois faz a separação corretamente.</p>
+            </div>
+            <div class="servicos-col">
+                <h3>cata-bagulho</h3>
+                <p>O serviço de cata cata-bagulho é realizada com qualquer tipo de objeto, caso esteja em um bom estado vendemos para ONGs ou para nossos clientes.</p>
+            </div>
+            <div class="servicos-col">
+                <h3>Compra e venda</h3>
+                <p>O serviço de compra e venda é realizado através do cata bagulho e, com isso revendemos os objetos com um preço acessível para todos!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="local">
+        <h1>Nosso local</h1>
+        <p>Uma cooperativa pequena, mas em busca de ter suporte para agendamento 24 horas por dia!</p>
+        <div class="row">
+            <div class="local-col">
+                <img src="img/escritorio.jpg">
+                <div class="layer">
+                    <h3>Escritório</h3>
+                </div>
+            </div>
+            <div class="local-col">
+                <img src="img/seletiva.jpg">
+                <div class="layer">
+                    <h3>Armazém</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientes">
+        <h1>O que os clientes falam</h1>
+
+        <div class="row">
+            <div class="clientes-col">
+                <img src="img/livia.jpg">
+                <div>
+                    <p>Empresa muito comprometida com o meio ambiente</p>
+                    <h3>Lívia Barcelos</h3>
+                </div>
+            </div>
+            <div class="clientes-col">
+                <img src="img/larissa.jpg">
+                <div>
+                    <p>Ótimo atendimento e um ótimo serviço</p>
+                    <h3>Larissa Bercley</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato">
+        <h1>Os melhores serviços prestados no estado de São Paulo</h1>
+        <a href="agendamentos.html.html" class="coleta-btn">CONTRATE NOS</a>
+    </section>
+
+    <section class="footer">
+        <h4>Sobre</h4>
+        <p>Cooperativa com serviços que possui atendimento 24 horas por dia através do nosso E-mail.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+        <p>Feito por Collect Master-2021</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicial-Collect Master</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html.html">Sobre</a></li>
+                    <li><a href="servicos.html.html">Serviços</a></li>
+                    <li><a href="agendamentos.html.html">Agendamento de serviços</a></li>
+                    <li><a href="../inicialTCC/index.html">Login/Cadastro</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Agendamentos</h1>
+    </section>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4978830052646!2d-46.64716380000001!3d-23.5505555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584b773d5aed%3A0x27b68c1080e64560!2sR.%20Augusta%2C%20101%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001305-000!5e0!3m2!1spt-BR!2sbr!4v1631035497751!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contrate-nos">
+
+        <div class="row">
+            <div class="contrate-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                <h5>R. Augusta, 101 - Consolação</h5>
+                <p>Endereço</p>
+            </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                <h5>(11)2911-5015</h5>
+                <p>Segunda até Sabado, 10hr até 18hr</p>
+            </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                <h5>mastercollect7@gmail.com</h5>
+                <p>Nosso email para quaisquer dúvidas</p>
+            </span>
+                </div>
+            </div>
+            <div class="contrate-col">
+                <form action="form-handler.php" method="POST">
+                    <input type="text" name="nome" placeholder="Nome Completo:" required>
+                    <input type="text" name="email" placeholder="E-mail:" required>
+                    <input type="text" name="telefone" placeholder="Telefone:" required>
+                    <input type="text" name="endereco" placeholder="Endereço:" required>
+                    <input type="text" name="cep" placeholder="CEP:" required>
+                    <input type="text" name="servico" placeholder="Tipo de serviço a ser desejado:" required>
+                    <input type="text" name="horario" placeholder="Horário e dia:" required>
+                    <textarea rows="8" name="descricao" placeholder="Descrição do objeto" required></textarea>
+                    <button type="submit" class="coleta-btn red-btn">Envie seus dados</button>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+        <h4>Sobre</h4>
+        <p>Cooperativa com serviços que possui atendimento 24 horas por dia através do nosso E-mail.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+        <p>Feito por Collect Master-2021</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
